@@ -1,20 +1,6 @@
-# Dependencies
 node_modules/
-
-# Build output
 dist/
-
-# Environment
+coverage/
 .env
-.env.local
-
-# Next.js
-web/node_modules/
-web/.next/
-
-# IDE
-.idea/
-.vscode/
-
-# OS
+*.log
 .DS_Store

@@ -1,10 +1,9 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
+import { AppModule } from './app/app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.enableCors();
-  await app.listen(process.env.PORT ?? 3000);
-  console.log(`Application running on: ${process.env.PORT ?? 3000}`);
+  await app.listen(3000);
+  console.log('Polymarket Bot Builder running on http://localhost:3000');
 }
 bootstrap();
