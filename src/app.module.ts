@@ -7,6 +7,9 @@ import { AppService } from './app.service';
 import { IndicatorsModule } from './indicators/indicators.module';
 import { StrategiesModule } from './strategies/strategies.module';
 import { PaperTradingModule } from './paper-trading/paper-trading.module';
+import { DeploymentModule } from './deployment/deployment.module';
+import { AnalyticsModule } from './analytics/analytics.module';
+import { MarketMonitoringModule } from './market-monitoring/market-monitoring.module';
 import { join } from 'path';
 
 @Module({
@@ -21,6 +24,9 @@ import { join } from 'path';
     IndicatorsModule,
     StrategiesModule,
     PaperTradingModule,
+    DeploymentModule,
+    AnalyticsModule,
+    MarketMonitoringModule,
   ],
   controllers: [AppController],
   providers: [AppService],
