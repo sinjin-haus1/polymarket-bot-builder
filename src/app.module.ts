@@ -4,7 +4,7 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { IndicatorsModule } from './indicators/indicators.module';
+import { StrategiesModule } from './strategies/strategies.module';
 import { join } from 'path';
 
 @Module({
@@ -17,6 +17,7 @@ import { join } from 'path';
       playground: true,
     }),
     IndicatorsModule,
+    StrategiesModule,
   ],
   controllers: [AppController],
   providers: [AppService],
